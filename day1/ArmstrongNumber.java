@@ -4,21 +4,20 @@ public class ArmstrongNumber {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int org=153;
-		int input = 153;
-		int sum = 0;
-		int rem;
-		while(input >0) {
-			rem=input%10;
-			sum=sum + (rem*rem*rem);
-			rem=input/10;
+		int a=0,b,rem;
+		int n = 153;
+		b=n;
+		while (n>0) {
+			rem = n % 10;
+			n =  n / 10;
+			a = a + (rem*rem*rem);
 		}
-		if(input==org)
-		{
-			System.out.println("is Armstrong Number");
-		}
-		else {
-			System.out.println("not an Armstrong number");
-		}
+			if(b == a) {
+				System.out.println("is an Armstrongnumber");
+			
+			}else {
+				System.out.println("is not an Armstrongnumber");
+				
+			}
 	}
 }
